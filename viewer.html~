@@ -2,8 +2,11 @@
 <html lang="ja">
 	<head>
 		<meta charset="utf-8">
-		<title>画像一覧</title>
+		<title>プリンちゃんの部屋</title>
 		<link rel="stylesheet" href="css/viewer.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="icon" href="favicon.ico">
 	<script src="viewer.js"></script>
 	</head>
 	<body>

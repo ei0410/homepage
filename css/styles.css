@@ -35,6 +35,35 @@ image .shadow {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+section {
+	padding: 90px 0;
+}
+
+section:nth-child(odd) {
+	background: #f5f5f5;
+}
+
+section .container {
+	width: 820px;
+	margin: 0 auto;
+}
+
+section h2 {
+	font-size: 26px;
+	text-align: center;
+	margin: 0 0 90px;
+	font-weight: normal;
+}
+
+section:not(.call-to-action) 
+h2:after {
+/*	content: '- title - ';*/
+	display: block;
+	font-size: 18px;
+	color: #aaa;
+	padding-top: 10px;
+}
+
 /* header */
 
 header {
@@ -60,4 +89,23 @@ header p {
 header h1 {
 	font-size: 34px;
 	margin-bottom: 50px;
+}
+
+header img {
+	position: absolute;
+	left: 45%;
+	top: 0;
+	padding: 40px;
+}
+
+/* features */
+
+.features h2:after {
+	content: ' - Fetures - ';
+}
+
+/* voices */
+
+.voices h2:after {
+	content: ' voices - ';
 }
