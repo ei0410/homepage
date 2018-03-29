@@ -2,7 +2,7 @@ window.onload = init;
 
 function init() {
 	var pictNo = 1;
-	var pictNumber = 4;
+	var pictNumber = 7;
 	var myImg = [];
 	var myNo   = document.getElementById('no');
 	var myPict = document.getElementById('pict');
@@ -11,7 +11,7 @@ function init() {
 
 	for (var i = 0; i < pictNumber; i++) {
 		myImg[i] = document.createElement('img');
-		myImg[i].src = 'image/circuit' + (i + 1) + '.jpg';
+		myImg[i].src = 'image/robot' + (i + 1) + '.jpg';
 	}
 
 	function showImg() {
