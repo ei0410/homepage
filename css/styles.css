@@ -121,6 +121,18 @@ header img {
 
 /* features */
 
+ul, ol {
+	color: #668ad8;
+	border: double 5px #668ad8;
+	background: #f1f8ff;
+	padding: 0.5em 0.5em 0.5em 2em;
+}
+
+ul li, ol li {
+	line-height: 1.5;
+	padding: 0.5em 0;
+}
+
 .features h2:after {
 	content: ' - Technology and Entertainment - ';
 }
