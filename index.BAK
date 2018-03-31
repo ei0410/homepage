@@ -17,7 +17,7 @@
 				</p>
 				<h1>eiの部屋</h1>
 				<a class="btn" href="namecard.html">僕の名刺をお持ちの方へ<i class="far fa-external-link"></i></a>
-				<img src="image/L298N.jpg" width="420" height="270" alt="PCB" class="shadow">
+				<img src="image/PCB.jpg" width="420" height="270" alt="PCB" class="shadow">
 			</div>
 		</header>
 		<section class="features">
@@ -47,7 +47,7 @@
 						<h1><p><a href="viewer.html">プリント基板の部屋</a></p></h1>
 						<h3>ロボット一覧↓</h3>
 						<h1><p><a href="viewer2.html">ロボットの部屋</a></p></h1>
-						<p>僕の描いたロボットです→<br>名刺のために作りました</p>
+						<p>僕の描いたロボットです→<br>とある企画のために作りました</p>
 					</div>
 				</div>
 			</div>
