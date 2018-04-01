@@ -13,7 +13,7 @@
 		<button id="rev_btn" disabled="disabled">←</button>
 		<button id="fwd_btn">→</button>
 		<p>
-		<img id="pict2" src="image/circuit1.jpg" width="420" height="270">
+		<img id="pict" src="image/circuit1.jpg" width="420" height="270">
 		<div id="no" class="no1">No.1</div>
 		<button id="rev_btn" disabled="disabled">←</button>
 		<button id="fwd_btn">→</button>
