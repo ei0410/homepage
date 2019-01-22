@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ToDolist</title>
+    <link rel="stylesheet" href="css/viewer3.css">
+</head>
+<body>
+    <div id="app">
+        <label v-for="label in options">
+            <input type="radio"
+                v-model="current"
+                v-bind:value="label.value">
+                {{ label.label }}
+            </label>
+        </label>
+
+        {{ computedTodos.length }} items
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="id">ID</th>
+                    <th class="comment">comment</th>
+                    <th class="state">state</th>
+                    <th class="button">-</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="item in computedTodos" v-bind:key="item.id">
+                    <th>{{ item.id }}</th>
+                    <td>{{ item.comment }}</td>
+                    <td class="state">
+                        <button v-on:click="doChangeState(item)">
+                            {{ labels[item.state] }}
+                        </button>
+                    </td>
+                    <td class="button">
+                        <button v-on:click.ctrl="doRemove(item)">
+                            delete
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Add some Todo</h2>
+        <form class="add-form" v-on:submit.prevent="doAdd">
+            comment <input type="text" ref="comment">
+            <button type="submit">Add</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="viewer3.js"></script>
+</body>
+</html>
