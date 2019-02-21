@@ -1,0 +1,11 @@
+version: '3'
+services:
+    nginx:
+        build: .
+        image: blog
+        container_name: eiblog
+        restart: always
+        ports:
+            - 9999:80
+        volumes:
+            - .:/usr/share/nginx/html
